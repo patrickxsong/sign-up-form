@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="side-bar">
+        <img class="bg" src="./halie-west-25xggax4bSA-unsplash.jpg" alt="">
+        <div class="logo-container">
+            <img class= "logo" src="./odin-lined.png" alt="">
+            <div>ODIN</div>
+        </div>
+        <div class="photo-cred">Photo by <a href = "#">Halie West</a> on <a href = "#">Unsplash</a></div>
+    </div>
+    <div class="right-side">
+        <div class="header">
+            <div>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</div>
+            <div>Sign up <em>now</em> to get started.</div>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+
+        <div class="body">
+            <form action="/" method="get" id="sign-up" novalidate>
+                <div class="sign-up">
+                    <legend>Let's do this!</legend>
+                    <div class="form-modal">
+                        <div class="input-group">
+                            <label for="fName">FIRST NAME</label><div></div>
+                            <input type="text" name="fName" id="fName">
+                        </div>
+                        <div class="input-group">
+                            <label for="lName">LAST NAME</label><div></div>
+                            <input class="focus" type="text" name="lName" id="lName" autofocus required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">EMAIL</label><div></div>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">PHONE NUMBER</label><div></div>
+                            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </div>
+                        <div class="input-group">
+                            <label for="password">PASSWORD</label><div></div>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="password">CONFIRM PASSWORD</label><div></div>
+                            <input type="password" name="password" id="confirm-password" required>
+                        </div>
+                        <div id="error"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="footer">
+            <button type="submit" form="sign-up">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+    
+    </div>
+</body>
+</html>
