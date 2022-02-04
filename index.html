@@ -17,6 +17,7 @@
         </div>
         <div class="photo-cred">Photo by <a href = "#">Halie West</a> on <a href = "#">Unsplash</a></div>
     </div>
+
     <div class="right-side">
         <div class="header">
             <div>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</div>
@@ -24,46 +25,41 @@
             <p>You <em>know</em> you want to.</p>
         </div>
 
-        <div class="body">
-            <form action="/" method="get" id="sign-up" novalidate>
-                <div class="sign-up">
-                    <legend>Let's do this!</legend>
-                    <div class="form-modal">
-                        <div class="input-group">
-                            <label for="fName">FIRST NAME</label><div></div>
-                            <input type="text" name="fName" id="fName">
-                        </div>
-                        <div class="input-group">
-                            <label for="lName">LAST NAME</label><div></div>
-                            <input class="focus" type="text" name="lName" id="lName" autofocus required>
-                        </div>
-                        <div class="input-group">
-                            <label for="email">EMAIL</label><div></div>
-                            <input type="email" name="email" id="email">
-                        </div>
-                        <div class="input-group">
-                            <label for="phone">PHONE NUMBER</label><div></div>
-                            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                        </div>
-                        <div class="input-group">
-                            <label for="password">PASSWORD</label><div></div>
-                            <input type="password" name="password" id="password" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="password">CONFIRM PASSWORD</label><div></div>
-                            <input type="password" name="password" id="confirm-password" required>
-                        </div>
-                        <div id="error"></div>
-                    </div>
+        <form action="/" method="get" id="sign-up" novalidate>
+            <legend>Let's do this!</legend>
+            <div class="form-modal">
+                <div class="input-group">
+                    <label for="fName">FIRST NAME</label><div></div>
+                    <input type="text" name="fName" id="fName">
                 </div>
-            </form>
-        </div>
+                <div class="input-group">
+                    <label for="lName">LAST NAME</label><div></div>
+                    <input class="focus" type="text" name="lName" id="lName" autofocus>
+                </div>
+                <div class="input-group">
+                    <label for="email">EMAIL</label><div></div>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="input-group">
+                    <label for="phone">PHONE NUMBER</label><div></div>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+                <div class="input-group">
+                    <label for="password">PASSWORD</label><div></div>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="input-group">
+                    <label for="password">CONFIRM PASSWORD</label><div></div>
+                    <input type="password" name="password" id="confirm-password">
+                </div>
+                <div id="error-message"></div>
+            </div>
+        </form>
 
         <div class="footer">
             <button type="submit" form="sign-up">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
-    
     </div>
 </body>
 </html>

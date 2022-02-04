@@ -116,10 +116,6 @@ button {
     box-shadow: 0 0 2px black;
 }
 
-.body {
-    flex: 1;
-}
-
 .photo-cred {
     position: absolute;
     bottom: 1.5vh;
@@ -132,12 +128,17 @@ button {
     color: rgba(255,255,255,0.7);
 }
 
-.error {
+.error,
+input:invalid {
     border-color: red;
 }
 
-#error {
+#error-message {
     font-style: italic;
     color: red;
     font-size: 2vmin;
+}
+
+form {
+    flex: 1;
 }
